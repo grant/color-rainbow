@@ -1,5 +1,6 @@
-color-rainbow
-=============
+# :rainbow: color-rainbow :rainbow: 
+
+![Rainbow!](https://cloud.githubusercontent.com/assets/744973/3422774/fcedaec8-ff63-11e3-8fcf-68ea34afb0ee.png)
 
 Easily generate rainbow colors.
 
@@ -28,9 +29,9 @@ Note: All colors are stored using [color](https://www.npmjs.org/package/color).
 
 ### Rainbow.create(numberOfColors)
 
-Gets a list of colors that creates a full rainbow cycle.
+Gets a list of colors that creates a full rainbow cycle (red to red).
 
-`numberOfColors`: The number of colors that make up a full rainbow cycle (from red, through the colors, then back to red)
+`numberOfColors`: The number of colors that make up a full rainbow cycle.
 
 ```js
 var Rainbow = require('color-rainbow');
@@ -46,7 +47,7 @@ for (var i = 0; i < colors.length; ++i) {
 
 Creates a new rainbow object. This is useful when we want to store individual states of a rainbow and get the next color in the rainbow on demand.
 
-`numberOfColors`: The number of colors that make up a full rainbow cycle (from red, through the colors, then back to red)
+`numberOfColors`: The number of colors that make up a full rainbow cycle.
 
 ### .next()
 
