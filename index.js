@@ -40,9 +40,12 @@ var getColor = function (index) {
   }));
 };
 
-var Rainbow = function () {
+var Rainbow = function (numberOfColors) {
+
+  var colorIndex = 0;
+
   this.next = function () {
-    console.log('hi');
+    return getColor(colorIndex++/numberOfColors % 1);
   };
 };
 
