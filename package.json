@@ -1,5 +1,5 @@
 {
-  "name": "rainbow-color",
+  "name": "color-rainbow",
   "version": "0.0.0",
   "description": "Easily generate rainbow colors",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/grant/rainbow-color.git"
+    "url": "git://github.com/grant/color-rainbow.git"
   },
   "keywords": [
     "color",
@@ -17,9 +17,9 @@
   "author": "Grant Timmerman",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/grant/rainbow-color/issues"
+    "url": "https://github.com/grant/color-rainbow/issues"
   },
-  "homepage": "https://github.com/grant/rainbow-color",
+  "homepage": "https://github.com/grant/color-rainbow",
   "devDependencies": {
     "mocha": "^1.20.1",
     "should": "^4.0.4"

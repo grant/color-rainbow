@@ -1,16 +1,16 @@
-rainbow-color
+color-rainbow
 =============
 
 Easily generate rainbow colors.
 
 ```sh
-npm install rainbow-color
+npm install color-rainbow
 ```
 
 ## Example
 
 ```js
-var Rainbow = require('rainbow-color');
+var Rainbow = require('color-rainbow');
 
 var numColors = 100;
 var rainbowColors = Rainbow(numColors);
@@ -36,7 +36,7 @@ Gets a list of colors that creates a full rainbow cycle.
 `numberOfColors`: The number of colors that make up a full rainbow cycle (from red, through the colors, then back to red)
 
 ```js
-var Rainbow = require('rainbow-color');
+var Rainbow = require('color-rainbow');
 
 var colors = Rainbow(100);
 
@@ -57,7 +57,7 @@ Creates a new rainbow object. This is useful when we want to store individual st
 Gets the next color of the rainbow wave
 
 ```js
-var Rainbow = require('rainbow-color');
+var Rainbow = require('color-rainbow');
 
 var myRainbow = new Rainbow(7);
 
