@@ -1,0 +1,23 @@
+{
+  "name": "rainbow-color",
+  "version": "0.0.0",
+  "description": "Easily generate rainbow colors",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/grant/rainbow-color.git"
+  },
+  "keywords": [
+    "color",
+    "rainbow"
+  ],
+  "author": "Grant Timmerman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/grant/rainbow-color/issues"
+  },
+  "homepage": "https://github.com/grant/rainbow-color"
+}
