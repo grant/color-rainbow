@@ -19,19 +19,24 @@ describe('rainbow', function () {
       rainbow[2].rgbArray().should.eql([0, 255, 0]);
     });
 
-    it('should work with semi-complex case', function () {
+    it('should work with complex case', function () {
       var Rainbow = require('./');
-      var rainbow = Rainbow(255);
+      var rainbow = Rainbow(12);
 
-      rainbow.length.should.equal(255);
+      rainbow.length.should.equal(12);
 
-      for (var i in rainbow) {
-        console.log(rainbow[i].rgbArray());
-      }
-
-      rainbow[0].rgbArray().should.eql([255, 0, 0]);
-      rainbow[1].rgbArray().should.eql([0, 0, 255]);
-      rainbow[2].rgbArray().should.eql([0, 255, 0]);
+      rainbow[0].rgbArray().should.eql([ 255, 0, 0 ]);
+      rainbow[1].rgbArray().should.eql([ 255, 0, 128 ]);
+      rainbow[2].rgbArray().should.eql([ 255, 0, 255 ]);
+      rainbow[3].rgbArray().should.eql([ 128, 0, 255 ]);
+      rainbow[4].rgbArray().should.eql([ 0, 0, 255 ]);
+      rainbow[5].rgbArray().should.eql([ 0, 128, 255 ]);
+      rainbow[6].rgbArray().should.eql([ 0, 255, 255 ]);
+      rainbow[7].rgbArray().should.eql([ 0, 255, 127 ]);
+      rainbow[8].rgbArray().should.eql([ 0, 255, 0 ]);
+      rainbow[9].rgbArray().should.eql([ 128, 255, 0 ]);
+      rainbow[10].rgbArray().should.eql([ 255, 255, 0 ]);
+      rainbow[11].rgbArray().should.eql([ 255, 128, 0 ]);
     });
   });
 });
