@@ -1,4 +1,4 @@
-# :rainbow: color-rainbow :rainbow: 
+# color-rainbow 
 
 ![Rainbow!](https://cloud.githubusercontent.com/assets/744973/3422774/fcedaec8-ff63-11e3-8fcf-68ea34afb0ee.png)
 
@@ -22,6 +22,8 @@ for (var i = 0; i < numColors; ++i) {
   html += '<div style:"background-color:"' + color + '"/>';
 }
 ```
+
+This generated the image above. ([Source](https://gist.github.com/grant/9ac8a91d8f384672497b))
 
 ## Docs
 
