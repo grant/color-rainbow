@@ -41,7 +41,7 @@ var Rainbow = require('rainbow-color');
 var colors = Rainbow(100);
 
 for (var i = 0; i < colors.length; ++i) {
-  console.log(colors[i].toRGB());
+  console.log(colors[i].rgb());
 }
 
 ```
@@ -54,6 +54,8 @@ Creates a new rainbow object. This is useful when we want to store individual st
 
 ### new Rainbow().next()
 
+Gets the next color of the rainbow wave
+
 ```js
 var Rainbow = require('rainbow-color');
 
@@ -65,3 +67,8 @@ var yellow = myRainbow.next()
 var green = myRainbow.next()
 var blue = myRainbow.next()
 var purple = myRainbow.next()
+```
+
+## Tests
+
+`npm test`

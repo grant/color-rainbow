@@ -1,8 +1,12 @@
 
 // A rainbow generator
 
-var Rainbow = function () {
-  
+var Rainbow = function (numberOfColors) {
+
+  console.log('hi');
 };
+
+
+
 
 module.exports = Rainbow;

@@ -4,7 +4,7 @@
   "description": "Easily generate rainbow colors",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test.js --require should --bail --reporter dot"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/grant/rainbow-color/issues"
   },
-  "homepage": "https://github.com/grant/rainbow-color"
+  "homepage": "https://github.com/grant/rainbow-color",
+  "devDependencies": {
+    "mocha": "^1.20.1",
+    "should": "^4.0.4"
+  }
 }
