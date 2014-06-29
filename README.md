@@ -20,9 +20,6 @@ for (var i = 0; i < numColors; ++i) {
   var color = rainbowColors[i].hexString()
   html += '<div style:"background-color:"' + color + '"/>';
 }
-
-// Render html
-
 ```
 
 ## Docs
@@ -43,16 +40,15 @@ var colors = Rainbow.create(100);
 for (var i = 0; i < colors.length; ++i) {
   console.log(colors[i].rgb());
 }
-
 ```
 
 ### new Rainbow(numberOfColors)
 
-Creates a new rainbow object. This is useful when we want to store individual states of a rainbow and get the next color in the rainbow per request
+Creates a new rainbow object. This is useful when we want to store individual states of a rainbow and get the next color in the rainbow on demand.
 
 `numberOfColors`: The number of colors that make up a full rainbow cycle (from red, through the colors, then back to red)
 
-### new Rainbow().next()
+### .next()
 
 Gets the next color of the rainbow wave
 
@@ -70,6 +66,6 @@ var purple = myRainbow.next()
 // The next myRainbow.next() would be red
 ```
 
-## Tests
+## Testing
 
 Run `npm test`.

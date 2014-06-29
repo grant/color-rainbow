@@ -14,22 +14,22 @@ var getColor = function (index) {
   var colorArray; // the rgb color array with colors that range from 0-1.
   switch (section) {
     case 0:
-      colorArray = [1, 0, start];
+      colorArray = [1, start, 0];
       break;
     case 1:
-      colorArray = [end, 0, 1];
+      colorArray = [end, 1, 0];
       break;
     case 2:
-      colorArray = [0, start, 1];
+      colorArray = [0, 1, start];
       break;
     case 3:
-      colorArray = [0, 1, end];
+      colorArray = [0, end, 1];
       break;
     case 4:
-      colorArray = [start, 1, 0];
+      colorArray = [start, 0, 1];
       break;
     case 5:
-      colorArray = [1, end, 0];
+      colorArray = [1, 0, end];
       break;
   }
 
