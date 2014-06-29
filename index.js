@@ -40,12 +40,24 @@ var getColor = function (index) {
   }));
 };
 
-var Rainbow = function (numberOfColors) {
-  var rainbow = [];
-  for (var i = 0; i < numberOfColors; ++i) {
-    rainbow[i] = getColor(i/numberOfColors);
+var Rainbow = function () {
+  this.next = function () {
+    console.log('hi');
+  };
+};
+
+Rainbow.create = function (numberOfColors) {
+  if (numberOfColors < 0) {
+    throw 'Number of colors must be non-negative';
+  } else if (typeof numberOfColors == 'undefined') {
+    throw 'You must have a number of colors per rainbow cycle.';
+  } else {
+    var rainbow = [];
+    for (var i = 0; i < numberOfColors; ++i) {
+      rainbow[i] = getColor(i/numberOfColors);
+    }
+    return rainbow;
   }
-  return rainbow;
 };
 
 module.exports = Rainbow;

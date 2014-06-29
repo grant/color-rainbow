@@ -13,7 +13,7 @@ npm install color-rainbow
 var Rainbow = require('color-rainbow');
 
 var numColors = 100;
-var rainbowColors = Rainbow(numColors);
+var rainbowColors = Rainbow.create(numColors);
 
 var html = '';
 for (var i = 0; i < numColors; ++i) {
@@ -29,7 +29,7 @@ for (var i = 0; i < numColors; ++i) {
 
 Note: All colors are stored using [color](https://www.npmjs.org/package/color).
 
-### Rainbow(numberOfColors)
+### Rainbow.create(numberOfColors)
 
 Gets a list of colors that creates a full rainbow cycle.
 
@@ -38,7 +38,7 @@ Gets a list of colors that creates a full rainbow cycle.
 ```js
 var Rainbow = require('color-rainbow');
 
-var colors = Rainbow(100);
+var colors = Rainbow.create(100);
 
 for (var i = 0; i < colors.length; ++i) {
   console.log(colors[i].rgb());

@@ -5,12 +5,12 @@ describe('rainbow', function () {
   describe('Rainbow(numberOfColors)', function () {
     it('should work with simple case', function () {
       var Rainbow = require('./');
-      Rainbow(1)[0].rgbArray().should.eql([255, 0, 0]);
+      Rainbow.create(1)[0].rgbArray().should.eql([255, 0, 0]);
     });
 
     it('should work with semi-complex case', function () {
       var Rainbow = require('./');
-      var rainbow = Rainbow(3);
+      var rainbow = Rainbow.create(3);
 
       rainbow.length.should.equal(3);
 
@@ -21,7 +21,7 @@ describe('rainbow', function () {
 
     it('should work with complex case', function () {
       var Rainbow = require('./');
-      var rainbow = Rainbow(12);
+      var rainbow = Rainbow.create(12);
 
       rainbow.length.should.equal(12);
 
@@ -37,6 +37,13 @@ describe('rainbow', function () {
       rainbow[9].rgbArray().should.eql([ 128, 255, 0 ]);
       rainbow[10].rgbArray().should.eql([ 255, 255, 0 ]);
       rainbow[11].rgbArray().should.eql([ 255, 128, 0 ]);
+    });
+  });
+
+  describe('new Rainbow().next()', function () {
+    it('should work with simple case', function () {
+      var Rainbow = require('./');
+      var rainbow = new Rainbow(4);
     });
   });
 });
