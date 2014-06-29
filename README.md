@@ -59,7 +59,7 @@ Gets the next color of the rainbow wave
 ```js
 var Rainbow = require('color-rainbow');
 
-var myRainbow = new Rainbow(7);
+var myRainbow = new Rainbow(6);
 
 var red = myRainbow.next()
 var orange = myRainbow.next()
@@ -67,8 +67,9 @@ var yellow = myRainbow.next()
 var green = myRainbow.next()
 var blue = myRainbow.next()
 var purple = myRainbow.next()
+// The next myRainbow.next() would be red
 ```
 
 ## Tests
 
-`npm test`
+Run `npm test`.
