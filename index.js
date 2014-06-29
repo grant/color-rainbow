@@ -8,8 +8,8 @@ var NUM_SECTIONS = 6;
 // Gets the rainbow color given a normalized index (0-1)
 // Returns a color
 var getColor = function (index) {
-  var section = Math.floor(index/NUM_SECTIONS);
-  var start = (index - (section/NUM_SECTIONS))/NUM_SECTIONS; // index from start of section (0-1)
+  var section = Math.floor(index * NUM_SECTIONS);
+  var start = (index - (section/NUM_SECTIONS)) * NUM_SECTIONS; // index from start of section (0-1)
   var end = 1 - start; // index from end of section (0-1)
 
   var colorArray;// the rgb color array with colors that range from 0-1.

@@ -4,7 +4,7 @@
   "description": "Easily generate rainbow colors",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test.js --require should --bail --reporter dot"
+    "test": "mocha test.js --require should --reporter dot"
   },
   "repository": {
     "type": "git",
